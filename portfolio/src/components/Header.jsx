@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "./Header.css";
+import About from "../assets/About.png";
 
 function Header() {
   useEffect(() => {
@@ -49,6 +50,61 @@ function Header() {
         </div>
       </section>
 
+      <section className="about" id="about">
+        <div className="about-img">
+          <img src={About} alt="About Me" />
+        </div>
+        <div className="about-text">
+          <h2>About <span>Me</span></h2>
+          <h4>FullStack Developer!</h4>
+          <p>'m a passionate Fullstack Developer with a strong foundation in both frontend and backend technologies.
+            I specialize in building responsive, high-performance web applications using technologies like React, Node.js, Spring Boot, and MySQL.
+            With experience in RESTful API development, database design, and UI/UX principles, I create complete solutions from scratch.
+            My frontend skills ensure pixel-perfect designs and smooth interactions, while my backend knowledge powers secure and efficient data handling.
+            I enjoy problem-solving, building scalable systems, and integrating third-party services and APIs.
+            I’m well-versed in modern tools and frameworks, including Git, Vite, Docker, and cloud platforms like AWS.
+            Writing clean, maintainable code and following best practices is at the core of my development workflow.
+            I'm a continuous learner who loves staying updated with the latest trends in web development.
+            Whether working independently or collaborating in a team, I strive to deliver high-quality, user-focused products.
+            I take pride in turning ideas into digital reality that drives value and impact.
+          </p>
+          <a href="#" className="btn-box">Download CV</a>
+        </div>
+      </section>
+      
+      <section>
+          <div className="services" id="services">
+            <div className="container">
+              <h1 className="sub-title"> My <span>Services</span></h1>
+              <div className="services-list">
+                <div>
+                  <i class='bx bx-code' style={{color:'#00eeff'}}></i>
+                  <h2>UI/UX Design</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quas eaque excepturi omnis sit repellendus sapiente dolorum exercitationem magni.
+                      Iure nam harum officia enim dolores accusamus aspernatur asperiores obcaecati ad neque?</p>
+                      <a href="#" className="read">Learn More</a>
+                </div>
+                <div>
+                  <i class='bx bx-crop' style={{color:'#00eeff' }}></i>
+                  <h2>UI/UX Design</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quas eaque excepturi omnis sit repellendus sapiente dolorum exercitationem magni.
+                      Iure nam harum officia enim dolores accusamus aspernatur asperiores obcaecati ad neque?</p>
+                      <a href="#" className="read">Learn More</a>
+                </div>
+                <div>
+                <i class='bx bxl-apple' style={{color:'#00eeff'}} ></i>
+                  <h2>UI/UX Design</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quas eaque excepturi omnis sit repellendus sapiente dolorum exercitationem magni.
+                      Iure nam harum officia enim dolores accusamus aspernatur asperiores obcaecati ad neque?</p>
+                      <a href="#" className="read">Learn More</a>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
     </div>
   );
 }
