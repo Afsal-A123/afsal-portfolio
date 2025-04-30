@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "./Header.css";
 import About from "../assets/About.png";
+import Project1 from "../assets/Project1.png";
+import Project2 from "../assets/Project2.png";
+import Project3 from "../assets/Project3.png";
 
 function Header() {
   useEffect(() => {
@@ -194,6 +197,40 @@ function Header() {
             </div>
 
           </div>
+        </div>
+      </section>
+      <section className="portfolio" id="project">
+        <div className="main-text" id="project">
+          <h2>Latest <span>Project</span></h2>
+          <div className="project-content">
+            <div className="row">
+              <img src={Project1}/>
+              <div className="layer">
+                <h5>UI/UX Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Asperiores quod laborum ad eius numquam aperiam, voluptatibus itaque, natus, facere soluta amet impedit atque incidunt harum.</p>
+                <a href="#"><i class="bx bx-link-external" style={{color:'aliceblue'}}></i></a>
+              </div>
+            </div>
+            <div className="row">
+              <img src={Project2}/>
+              <div className="layer">
+                <h5>UI/UX Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Asperiores quod laborum ad eius numquam aperiam, voluptatibus itaque, natus, facere soluta amet impedit atque incidunt harum.</p>
+                <a href="#"><i class="bx bx-link-external" style={{color:'aliceblue'}}></i></a>
+              </div>
+            </div>
+            <div className="row">
+              <img src={Project3}/>
+              <div className="layer">
+                <h5>UI/UX Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Asperiores quod laborum ad eius numquam aperiam, voluptatibus itaque, natus, facere soluta amet impedit atque incidunt harum.</p>
+                <a href="#"><i class="bx bx-link-external" style={{color:'#0ef'}}></i></a>
+              </div>
+            </div>
+        </div>
         </div>
       </section>
     </div>
