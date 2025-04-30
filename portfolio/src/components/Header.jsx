@@ -27,11 +27,11 @@ function Header() {
       <header className="header">
         <a href="#home" className="logo">Portfolio</a>
         <nav className="navbar">
-          <a href="#" style={{ "--i": 1 }} className="active">Home</a>
-          <a href="#" style={{ "--i": 2 }}>About</a>
-          <a href="#" style={{ "--i": 3 }}>Skills</a>
-          <a href="#" style={{ "--i": 4 }}>Projects</a>
-          <a href="#" style={{ "--i": 5 }}>Contact</a>
+          <a href="#home" style={{ "--i": 1 }} className="active">Home</a>
+          <a href="#about" style={{ "--i": 2 }}>About</a>
+          <a href="#services" style={{ "--i": 3 }}>Skills</a>
+          <a href="#portfolio" style={{ "--i": 4 }}>Projects</a>
+          <a href="#contact" style={{ "--i": 5 }}>Contact</a>
         </nav>
       </header>
 
@@ -233,6 +233,42 @@ function Header() {
         </div>
         </div>
       </section>
+
+      <section className="contact" id="contact">
+        <div className="contact-text">
+          <h2>Contact <span>Me</span></h2>
+          <h4>Let's work Together</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, culpa explicabo.
+             Animi veniam beatae quas, necessitatibus modi sunt voluptatum, dicta nam culpa fugiat aliquid eius, molestiae accusamus illum optio ad!</p>
+             <div className="contact-list">
+              <li><i class='bx bxs-send' style={{color:'#0ef'}}></i>contact@gmail.com</li>
+              <li><i class='bx bxs-phone' style={{color:'#0ef'}}></i>+91 1234567890</li>
+             </div>
+             <div className="contact-icons">
+              <a href="#"><i class='bx bxl-facebook' style={{color:'#0ef'}}></i></a>
+              <a href="#"><i class='bx bxl-linkedin' style={{color:'#0ef'}}></i></a>
+              <a href="#"><i class='bx bxl-instagram' style={{color:'#0ef'}}></i></a>
+              <a href="#"><i class='bx bxl-whatsapp' style={{color:'#0ef'}}></i></a>
+             </div>
+        </div>
+        <div className="contact-form">
+          <form action="">
+            <div className="form-group">
+              <input type="text" placeholder="Enter Your Name" required/>
+              <input type="email" placeholder="Enter Your Email" required/>
+          
+              <input type="text" placeholder="Enter Your Subject" required/>
+              <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+              <input type="submit" value="submit" className="send"/>
+            </div>
+          </form>
+        </div>
+
+        </section>
+        <div className="last-text">
+          <p>Copyright &copy; 2023 All rights reserved | This template is made with <i class='bx bxs-heart' style={{color:'#0ef'}}></i> by Afsal A</p>
+        </div>
+        <a href="#" className="top"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
   );
 }
